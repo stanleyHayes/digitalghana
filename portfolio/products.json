@@ -12,8 +12,8 @@
   "controlPlane": {
     "github": {
       "authenticatedAccount": "stanleyHayes",
-      "remoteState": "missing",
-      "remote": null
+      "remoteState": "configured",
+      "remote": "https://github.com/stanleyHayes/digitalghana"
     },
     "vercel": {
       "team": "hayfordstanleys-projects",

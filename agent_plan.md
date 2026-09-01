@@ -229,7 +229,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 **Outcome:** `digitalghana` becomes a documented, version-controlled control plane.
 
 - [x] Initialize a local Git repository on `main` without touching GeoGhana.
-- [ ] Create/attach the remote under the approved GitHub owner or organization.
+- [x] Create public `stanleyHayes/digitalghana`, attach `origin`, push `main`, and verify `0 behind / 0 ahead`.
 - [x] Add `README.md`, `AGENTS.md`, governance, contribution, security and code-of-conduct files.
 - [x] Preserve the source DOCX files in place and record checksums/roles under `docs/portfolio/`.
 - [x] Add ADR, governance and standards directories. Product template remains a later phase.
@@ -329,7 +329,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-0.2 | GeoGhana architecture/plan audit | Done | Codex | — | Independent clean repo, mature monorepo and deployment blueprint verified locally |
 | DG-0.3 | Portfolio architecture recommendation | Done | Owner | DG-0.1, DG-0.2 | ADR-0001 accepted on 2026-09-01; full implementation authorized |
 | DG-0.4 | Provider/DNS/GitHub inventory | In progress | Codex / Owner | DG-0.3 | Public and authenticated evidence recorded; GitHub owner/package scope and Vercel project attachment remain |
-| DG-1.1 | ADR-0001 and repository foundation | Done locally; remote pending | Codex | DG-0.3 | Commit `9ff1bb0`; clean-clone validation passes; remote owner/URL requires confirmation |
+| DG-1.1 | ADR-0001 and repository foundation | Done | Codex | DG-0.3 | Public repo `stanleyHayes/digitalghana`; commits `9ff1bb0`, `0ee2777`, `3f40605`; clean-clone validation passes |
 | DG-2.1 | GeoGhana plan reconciliation | Ready after approval | Unassigned | DG-0.3 | Must be edited in `../geoghana`, following its lane rules |
 | DG-2.2 | GeoGhana domain migration/attachment | Blocked | Unassigned | DG-0.4, DG-2.1 | Needs DNS/provider inventory and approved hostname convention |
 | DG-2.3 | GeoGhana production launch verification | Blocked | Unassigned | DG-2.2 | External secrets, alerting, backup tier and registry ownership may remain |

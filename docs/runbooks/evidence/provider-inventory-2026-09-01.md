@@ -6,10 +6,10 @@
 
 - Authenticated account: `stanleyHayes`.
 - Available organizations visible to the account: `Jay-Stan`, `Encode-Club-EVM-Bootcamp`.
-- `stanleyHayes/digitalghana` does not currently exist.
-- The local portfolio repository has no remote.
+- Public repository `stanleyHayes/digitalghana` was created after owner approval and now tracks the local `main` branch.
+- Post-push Git parity was `0 behind / 0 ahead`.
 
-**Decision still required:** create the repository under `stanleyHayes`, use an existing appropriate organization, or create/transfer to a dedicated Digital Ghana organization.
+**Future option:** transfer the repository to a dedicated Digital Ghana organization when one is created; no history rewrite is required.
 
 ## Vercel
 
