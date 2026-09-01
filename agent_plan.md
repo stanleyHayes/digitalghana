@@ -218,7 +218,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 - [x] Record proposed ADR-0001: portfolio repository and deployment boundaries.
 - [x] Inventory public DNS/TLS state and record evidence; Vercel DNS is authoritative and wildcard resolution exists, but inspected HTTPS surfaces do not complete TLS.
 - [x] Inventory authenticated Vercel team/domain, Render workspace and GitHub account/organization candidates.
-- [ ] Choose GitHub repository owner and package scope; directly reconcile Vercel domain-to-project attachment.
+- [x] Use `stanleyHayes` as the documented temporary GitHub owner, defer package publication until product stable gates, and directly reconcile every current Vercel/Render attachment.
 
 **Anti-pattern guards:** no repository move; no DNS mutation; no secret copying; no provider assumptions before inventory.
 
@@ -243,12 +243,12 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 
 **Outcome:** existing product is reachable through approved `digitalghana.dev` hostnames with verified production operations.
 
-- [ ] Reconcile `../geoghana/agent_plan.md` status against actual code/evidence.
-- [ ] Attach and validate public/application/API hostnames.
-- [ ] Update CORS, passkey origins, canonical URLs, redirects, CSP and environment configuration together.
+- [x] Reconcile `../geoghana/agent_plan.md` status against actual code/evidence; GEO-30.1 honestly records frontend-live/API-blocked state.
+- [x] Attach and validate the four launchable public/application hostnames; reserve `api-geo` without claiming it live.
+- [x] Update CORS, passkey origins, canonical URLs, redirects, CSP and environment configuration together in GeoGhana merge `324916e`.
 - [ ] Complete external provider gates or record explicit owner-approved deferrals.
 - [ ] Run production preflight and end-to-end smoke evidence.
-- [ ] Add GeoGhana to the umbrella product catalogue and status surface.
+- [x] Add GeoGhana to the umbrella product catalogue and status surface with its external-block lifecycle.
 
 **Verification:** DNS resolution, TLS, HTTP status, canonical/redirect behavior, CORS preflight, passkey RP/origins, API readiness, worker health, alert delivery, restore evidence and rollback evidence all pass.
 
@@ -344,7 +344,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-0.1 | Portfolio/document audit | Done | Codex | — | Eight proposed products plus later GhanaData platform identified from portfolio source |
 | DG-0.2 | GeoGhana architecture/plan audit | Done | Codex | — | Independent clean repo, mature monorepo and deployment blueprint verified locally |
 | DG-0.3 | Portfolio architecture recommendation | Done | Owner | DG-0.1, DG-0.2 | ADR-0001 accepted on 2026-09-01; full implementation authorized |
-| DG-0.4 | Provider/DNS/GitHub inventory | In progress | Codex / Owner | DG-0.3 | Public and authenticated evidence recorded; GitHub owner/package scope and Vercel project attachment remain |
+| DG-0.4 | Provider/DNS/GitHub inventory | Done — package publication deferred | Codex / Owner | DG-0.3 | `stanleyHayes` temporary owner, Vercel DNS/team, all live Vercel projects and Render services reconciled; package scope waits for stable release need |
 | DG-1.1 | ADR-0001 and repository foundation | Done | Codex | DG-0.3 | Public repo `stanleyHayes/digitalghana`; commits `9ff1bb0`, `0ee2777`, `3f40605`; clean-clone validation passes |
 | DG-2.1 | GeoGhana plan reconciliation | Done | Codex | DG-0.3 | Merged through `stanleyHayes/geoghana#1`; merge `324916e` |
 | DG-2.2 | GeoGhana domain migration/attachment | Done | Codex | DG-0.4, DG-2.1 | Four canonical frontend hosts attached to Vercel with valid TLS and HTTP 200 |
