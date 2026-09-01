@@ -27,6 +27,7 @@ REQUIRED_PATHS = %w[
   docs/governance/licensing-policy.md
   docs/standards/domain-and-dns.md
   docs/standards/product-lifecycle.md
+  docs/standards/interface-design.md
   docs/runbooks/evidence/dns-inventory-2026-09-01.md
   docs/runbooks/evidence/provider-inventory-2026-09-01.md
   docs/portfolio/source-manifest.json

@@ -294,6 +294,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 - [ ] GhanaGov: institution hierarchy/service catalogue with official-source verification.
 - [ ] GhanaValidate: package-first primitives, never false claims of authoritative identity verification.
 - [ ] GhanaSchools: source/licence-approved registry linked through GhanaGeo IDs and GhanaCodes namespaces.
+- [ ] Audit shipped product interfaces against `docs/standards/interface-design.md`; GhanaGov and the umbrella are aligned, while Calendar/Codes require recorded migration checks.
 
 **Verification:** each product independently meets the global definition of done and failure of one does not make another unavailable.
 
@@ -352,6 +353,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-4.1 | Product repository starter | Done | Codex | DG-1.1, DG-2.1 | `scripts/test_generate_product.rb` proves clean generation, required controls, token replacement, no Geo-specific leakage and no embedded secret signatures |
 | DG-5.1 | GhanaCalendar beta | Done — stable gates remain | Codex | DG-4.1 | Public repo and product ledger; web/API live; source, fixture, CI, TLS and smoke evidence recorded |
 | DG-9.1 | Neurodyne NOSI source review and future integration plan | Done — execution not approved | Codex | DG-0.1 | Two source DOCX files checksummed; boundary/gates/backlog recorded in `docs/portfolio/neurodyne-nosi-integration-plan.md`; visual DOCX render unavailable because LibreOffice is not installed |
+| DG-6.UI | Portfolio typography and custom-control standard | In progress | Codex | DG-3.1 | GeoGhana reference adopted; umbrella and GhanaGov aligned; Calendar/Codes audit and migration remain |
 
 ### Status rules
 

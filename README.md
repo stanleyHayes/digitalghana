@@ -25,6 +25,7 @@ Digital Ghana uses a federated portfolio:
 - this repository owns portfolio governance, standards, the umbrella website and cross-product inventory;
 - each product owns its repository, data, deployments, secrets, contracts, releases and product execution ledger;
 - products integrate through versioned APIs, SDKs or pinned dataset artifacts—not shared databases;
+- product interfaces follow the shared [Outfit, Geist Mono and custom-control standard](docs/standards/interface-design.md), derived from GeoGhana's proven UI decisions;
 - `digitalghana.dev` is the umbrella, while products use sibling subdomains;
 - the unified GhanaData gateway is intentionally deferred until several products are stable.
 
