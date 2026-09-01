@@ -35,6 +35,7 @@ required_files = %w[
   docs/standards/domain-and-dns.md
   docs/standards/product-lifecycle.md
   docs/runbooks/evidence/dns-inventory-2026-09-01.md
+  docs/runbooks/evidence/provider-inventory-2026-09-01.md
   portfolio/products.json
   portfolio/products.schema.json
   docs/portfolio/source-manifest.json
@@ -56,6 +57,16 @@ nameservers = dns.fetch("nameservers", [])
 error("at least two unique nameservers are required") if nameservers.uniq.length < 2
 dns_evidence = dns["evidence"].to_s
 error("missing DNS inventory evidence") if dns_evidence.empty? || !ROOT.join(dns_evidence).file?
+
+control_plane = catalogue.fetch("controlPlane", {})
+provider_evidence = control_plane["evidence"].to_s
+error("missing provider inventory evidence") if provider_evidence.empty? || !ROOT.join(provider_evidence).file?
+github = control_plane.fetch("github", {})
+error("missing authenticated GitHub account") if github["authenticatedAccount"].to_s.empty?
+error("invalid GitHub remote state") unless %w[missing configured].include?(github["remoteState"])
+if github["remoteState"] == "configured" && github["remote"].to_s.empty?
+  error("configured GitHub remote lacks URL")
+end
 
 allowed_lifecycles = %w[proposed planning building beta stable externally_blocked retired]
 allowed_surface_states = %w[planned provisioning live redirect retired]

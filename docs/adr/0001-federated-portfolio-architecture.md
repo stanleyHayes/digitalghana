@@ -1,6 +1,6 @@
 # ADR-0001: Federated portfolio with independent product repositories
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-09-01
 - **Decision owner:** Digital Ghana project owner
 - **Scope:** Repository, deployment, data and hostname boundaries
@@ -58,7 +58,7 @@ Rejected because it centralizes authentication and availability before stable do
 
 ## Approval gate
 
-Changing this ADR to `Accepted` authorizes portfolio foundation work under these boundaries. It does not by itself authorize live DNS/provider mutations or changes inside a product repository; those require claimed ledger tasks and verified provider inventory.
+The owner approved this plan on 2026-09-01 and authorized end-to-end implementation, including all product subdomains. Live DNS/provider mutations and product-repository changes remain individually evidence-gated: a hostname is not marked `live` until its application and production checks pass.
 
 ## Verification
 

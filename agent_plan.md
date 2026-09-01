@@ -3,7 +3,7 @@
 **Project key:** `DG`
 **Version:** 0.1 (decision draft)
 **Last updated:** 2026-09-01
-**Status:** Architecture recommendation remains proposed. The reversible local portfolio foundation and public DNS inventory are implemented and verified; no product repository move, provider mutation or DNS mutation has been performed.
+**Status:** Architecture approved by the owner on 2026-09-01. Portfolio implementation is in progress; no product repository has been moved and live hostname status remains evidence-gated.
 **Portfolio source:** `Ghana_Digital_Public_Infrastructure_Project_Portfolio.docx`
 **Existing product source:** `../geoghana/agent_plan.md`, `../geoghana/AGENTS.md`, and the current GeoGhana repository/deployment configuration
 
@@ -214,10 +214,11 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 - [x] Read the portfolio document and enumerate products/dependencies.
 - [x] Inspect GeoGhana repository structure, remote, plan and deployment blueprint.
 - [x] Recommend federated polyrepo architecture and sibling subdomains.
-- [ ] Owner approves or amends the decision.
+- [x] Owner approved the decision and full subdomain implementation on 2026-09-01.
 - [x] Record proposed ADR-0001: portfolio repository and deployment boundaries.
 - [x] Inventory public DNS/TLS state and record evidence; Vercel DNS is authoritative and wildcard resolution exists, but inspected HTTPS surfaces do not complete TLS.
-- [ ] Inventory authenticated Vercel team/project, Render workspace, registrar, GitHub owner/org and package scope.
+- [x] Inventory authenticated Vercel team/domain, Render workspace and GitHub account/organization candidates.
+- [ ] Choose GitHub repository owner and package scope; directly reconcile Vercel domain-to-project attachment.
 
 **Anti-pattern guards:** no repository move; no DNS mutation; no secret copying; no provider assumptions before inventory.
 
@@ -326,9 +327,9 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 |---|---|---|---|---|---|
 | DG-0.1 | Portfolio/document audit | Done | Codex | — | Eight proposed products plus later GhanaData platform identified from portfolio source |
 | DG-0.2 | GeoGhana architecture/plan audit | Done | Codex | — | Independent clean repo, mature monorepo and deployment blueprint verified locally |
-| DG-0.3 | Portfolio architecture recommendation | Awaiting approval | Owner | DG-0.1, DG-0.2 | Decision in §§1–7 |
-| DG-0.4 | Provider/DNS/GitHub inventory | In progress | Codex / Owner | DG-0.3 | Public evidence: `docs/runbooks/evidence/dns-inventory-2026-09-01.md`; authenticated account inventory remains |
-| DG-1.1 | ADR-0001 and repository foundation | Done locally; remote pending | Codex | DG-0.3 | Local `main`, governance, catalog, validator and CI pass; remote owner/URL requires confirmation |
+| DG-0.3 | Portfolio architecture recommendation | Done | Owner | DG-0.1, DG-0.2 | ADR-0001 accepted on 2026-09-01; full implementation authorized |
+| DG-0.4 | Provider/DNS/GitHub inventory | In progress | Codex / Owner | DG-0.3 | Public and authenticated evidence recorded; GitHub owner/package scope and Vercel project attachment remain |
+| DG-1.1 | ADR-0001 and repository foundation | Done locally; remote pending | Codex | DG-0.3 | Commit `9ff1bb0`; clean-clone validation passes; remote owner/URL requires confirmation |
 | DG-2.1 | GeoGhana plan reconciliation | Ready after approval | Unassigned | DG-0.3 | Must be edited in `../geoghana`, following its lane rules |
 | DG-2.2 | GeoGhana domain migration/attachment | Blocked | Unassigned | DG-0.4, DG-2.1 | Needs DNS/provider inventory and approved hostname convention |
 | DG-2.3 | GeoGhana production launch verification | Blocked | Unassigned | DG-2.2 | External secrets, alerting, backup tier and registry ownership may remain |

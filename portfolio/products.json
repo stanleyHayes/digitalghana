@@ -9,6 +9,22 @@
     "evidence": "docs/runbooks/evidence/dns-inventory-2026-09-01.md",
     "wildcardResolution": true
   },
+  "controlPlane": {
+    "github": {
+      "authenticatedAccount": "stanleyHayes",
+      "remoteState": "missing",
+      "remote": null
+    },
+    "vercel": {
+      "team": "hayfordstanleys-projects",
+      "domainRegistrar": "Vercel"
+    },
+    "render": {
+      "workspace": "tea-cspvc3ggph6c739fskn0",
+      "geoServicesFound": false
+    },
+    "evidence": "docs/runbooks/evidence/provider-inventory-2026-09-01.md"
+  },
   "products": [
     {
       "id": "portfolio",

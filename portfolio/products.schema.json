@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Digital Ghana product catalogue",
   "type": "object",
-  "required": ["version", "domain", "dns", "products"],
+  "required": ["version", "domain", "dns", "controlPlane", "products"],
   "properties": {
     "version": { "type": "integer", "minimum": 1 },
     "domain": { "const": "digitalghana.dev" },
@@ -20,6 +20,42 @@
         "verifiedAt": { "type": "string", "format": "date" },
         "evidence": { "type": "string", "minLength": 1 },
         "wildcardResolution": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "controlPlane": {
+      "type": "object",
+      "required": ["github", "vercel", "render", "evidence"],
+      "properties": {
+        "github": {
+          "type": "object",
+          "required": ["authenticatedAccount", "remoteState"],
+          "properties": {
+            "authenticatedAccount": { "type": "string", "minLength": 1 },
+            "remoteState": { "enum": ["missing", "configured"] },
+            "remote": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "vercel": {
+          "type": "object",
+          "required": ["team", "domainRegistrar"],
+          "properties": {
+            "team": { "type": "string", "minLength": 1 },
+            "domainRegistrar": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "render": {
+          "type": "object",
+          "required": ["workspace", "geoServicesFound"],
+          "properties": {
+            "workspace": { "type": "string", "minLength": 1 },
+            "geoServicesFound": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "evidence": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false
     },
