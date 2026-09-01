@@ -291,7 +291,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 **Outcome:** build GhanaCodes, then GhanaGov, GhanaValidate and GhanaSchools using stable Geo/Calendar conventions.
 
 - [x] GhanaCodes: GSS 2021 region/MMDA namespace and ambiguity-safe resolution public beta; broader historical/external namespaces remain stable gates.
-- [ ] GhanaGov: institution hierarchy/service catalogue with official-source verification.
+- [x] GhanaGov: verified-subset public beta with source-linked institution hierarchy/service catalogue, independent web/API deployments, custom-control/browser QA, SEO evidence and rollback drills.
 - [ ] GhanaValidate: package-first primitives, never false claims of authoritative identity verification.
 - [ ] GhanaSchools: source/licence-approved registry linked through GhanaGeo IDs and GhanaCodes namespaces.
 - [ ] Audit shipped product interfaces against `docs/standards/interface-design.md`; GhanaGov and the umbrella are aligned, while Calendar/Codes require recorded migration checks.
@@ -352,6 +352,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-3.1 | Umbrella website | Done | Codex | DG-1.1 | Registry-driven site live at `digitalghana.dev`; deployment `dpl_EJeL8KMjuaY4wRMazDagu5PDRaHW`; HTTP 200 and TLS verified |
 | DG-4.1 | Product repository starter | Done | Codex | DG-1.1, DG-2.1 | `scripts/test_generate_product.rb` proves clean generation, required controls, token replacement, no Geo-specific leakage and no embedded secret signatures |
 | DG-5.1 | GhanaCalendar beta | Done — stable gates remain | Codex | DG-4.1 | Public repo and product ledger; web/API live; source, fixture, CI, TLS and smoke evidence recorded |
+| DG-6.1 | GhanaGov verified-subset beta | Done — stable gates remain | Codex | DG-5.1 | Web/API live; CI `33520923452`; Vercel `dpl_57L7Rrvn9naggsxmkSr47rAxNQ6W`; Render `dep-dabe7j67bikc73824n20`; canonical contract, browser, SEO and rollback evidence recorded |
 | DG-9.1 | Neurodyne NOSI source review and future integration plan | Done — execution not approved | Codex | DG-0.1 | Two source DOCX files checksummed; boundary/gates/backlog recorded in `docs/portfolio/neurodyne-nosi-integration-plan.md`; visual DOCX render unavailable because LibreOffice is not installed |
 | DG-6.UI | Portfolio typography and custom-control standard | In progress | Codex | DG-3.1 | GeoGhana reference adopted; umbrella and GhanaGov aligned; Calendar/Codes audit and migration remain |
 

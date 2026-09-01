@@ -80,12 +80,12 @@
       "id": "gov",
       "name": "GhanaGov Registry",
       "repository": "ghanagov",
-      "lifecycle": "proposed",
+      "lifecycle": "beta",
       "order": 3,
-      "notes": "Institution and government-service registry.",
+      "notes": "Public beta with a deliberately small, source-linked subset of 10 institutions and four official service entry points; broader coverage and admin verification remain stable gates.",
       "surfaces": [
-        { "kind": "web", "hostname": "gov.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
-        { "kind": "api", "hostname": "api-gov.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+        { "kind": "web", "hostname": "gov.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/ghanagov-beta-2026-09-01.md" },
+        { "kind": "api", "hostname": "api-gov.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Render", "evidence": "docs/runbooks/evidence/ghanagov-beta-2026-09-01.md" }
       ]
     },
     {
