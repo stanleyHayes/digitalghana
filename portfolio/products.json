@@ -103,12 +103,12 @@
       "id": "schools",
       "name": "GhanaSchools",
       "repository": "ghanaschools",
-      "lifecycle": "proposed",
+      "lifecycle": "beta",
       "order": 5,
-      "notes": "Education registry after source and licence review.",
+      "notes": "Provenance-complete verified-subset beta covering 16 GTEC-listed public universities with stable IDs and pinned GhanaGeo references; broader education coverage remains source-gated.",
       "surfaces": [
-        { "kind": "web", "hostname": "schools.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
-        { "kind": "api", "hostname": "api-schools.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+        { "kind": "web", "hostname": "schools.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/ghanaschools-beta-2026-09-01.md" },
+        { "kind": "api", "hostname": "api-schools.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Render", "evidence": "docs/runbooks/evidence/ghanaschools-beta-2026-09-01.md" }
       ]
     },
     {

@@ -11,7 +11,7 @@ Digital Ghana is an open-source portfolio of small, composable public-interest i
 | GhanaCodes | Identifier namespaces and interoperability crosswalks | Proposed | [codes.digitalghana.dev](https://codes.digitalghana.dev) |
 | GhanaGov Registry | Source-linked public-institution and official-service directory | Beta | [gov.digitalghana.dev](https://gov.digitalghana.dev) |
 | GhanaValidate | Honest Ghana-specific syntax validation and normalization primitives | Beta | [validate.digitalghana.dev](https://validate.digitalghana.dev) |
-| GhanaSchools | Canonical education-institution registry | Proposed | [schools.digitalghana.dev](https://schools.digitalghana.dev) |
+| GhanaSchools | Source-linked education-institution registry | Beta | [schools.digitalghana.dev](https://schools.digitalghana.dev) |
 | GhanaDataset Registry | Public-dataset catalogue and access-path registry | Proposed | [datasets.digitalghana.dev](https://datasets.digitalghana.dev) |
 | GhanaEssential | Verified emergency and essential-service discovery | Proposed | [essential.digitalghana.dev](https://essential.digitalghana.dev) |
 | GhanaData | Unified gateway and developer experience | Deferred | [developers.digitalghana.dev](https://developers.digitalghana.dev) |
