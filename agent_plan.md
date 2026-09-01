@@ -303,7 +303,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 **Outcome:** build GhanaDataset Registry, then GhanaEssential after verification operations are proven.
 
 - [x] Dataset Registry metadata-only verified-subset beta indexes official access paths without copying source or restricted datasets; broader catalogue coverage remains a stable gate.
-- [ ] Essential publishes only verified contact/location records, exposes freshness and supports resilient offline export.
+- [x] Essential safety-gated beta publishes only five current official-source national contacts, exposes freshness and supports a versioned offline export; broader location coverage remains source-gated.
 
 **Verification:** licence uncertainty is explicit; dead links/schema changes alert; stale/unverified essential contacts cannot appear verified.
 
@@ -356,6 +356,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-6.2 | GhanaValidate package-first beta | Done — stable gates remain | Codex | DG-6.1 | Web live; CI `33522410941`; Vercel `dpl_CJ3BZZWwhWq2CSDqZs9DsFrmmAWA`; package contracts/tests, browser, SEO, custom-control and rollback evidence recorded |
 | DG-6.3 | GhanaSchools verified-subset beta | Done — stable gates remain | Codex | DG-6.2 | Web/API live; CI `33523973473`; Vercel `dpl_GqChhh8NFDVoC9d7LMBTGaXCnC7e`; Render `dep-dabep749v7es73cvajug`; dataset, contracts, browser, SEO and rollback evidence recorded |
 | DG-7.1 | GhanaDataset metadata-only beta | Done — stable gates remain | Codex | DG-6.3 | Web/API live; CI `33525713204`; Vercel `dpl_7DNotCeQfjj422UESt9TL5ecUVHi`; Render `dep-dabeveu10ojc73a4cjj0`; source rights, contracts, browser, SEO and rollback evidence recorded |
+| DG-7.2 | GhanaEssential safety-gated beta | Done — stable gates remain | Codex | DG-7.1 | Web/API live; CI `33526951922`; Vercel `dpl_EabK9Fwxrqzzx9n18ciu6xfkxEzh`; Render `dep-dabf4r610ojc73a4pcc0`; freshness, safety, offline, browser, SEO and rollback evidence recorded |
 | DG-9.1 | Neurodyne NOSI source review and future integration plan | Done — execution not approved | Codex | DG-0.1 | Two source DOCX files checksummed; boundary/gates/backlog recorded in `docs/portfolio/neurodyne-nosi-integration-plan.md`; visual DOCX render unavailable because LibreOffice is not installed |
 | DG-6.UI | Portfolio typography and custom-control standard | In progress | Codex | DG-3.1 | GeoGhana reference adopted; umbrella and GhanaGov aligned; Calendar/Codes audit and migration remain |
 

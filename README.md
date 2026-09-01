@@ -13,7 +13,7 @@ Digital Ghana is an open-source portfolio of small, composable public-interest i
 | GhanaValidate | Honest Ghana-specific syntax validation and normalization primitives | Beta | [validate.digitalghana.dev](https://validate.digitalghana.dev) |
 | GhanaSchools | Source-linked education-institution registry | Beta | [schools.digitalghana.dev](https://schools.digitalghana.dev) |
 | GhanaDataset Registry | Public-dataset catalogue and access-path registry | Beta | [datasets.digitalghana.dev](https://datasets.digitalghana.dev) |
-| GhanaEssential | Verified emergency and essential-service discovery | Proposed | [essential.digitalghana.dev](https://essential.digitalghana.dev) |
+| GhanaEssential | Verified emergency and essential-service discovery | Beta | [essential.digitalghana.dev](https://essential.digitalghana.dev) |
 | GhanaData | Unified gateway and developer experience | Deferred | [developers.digitalghana.dev](https://developers.digitalghana.dev) |
 
 Lifecycle labels describe the repository record, not a promise that the hostname is already live. Machine-readable state is in [`portfolio/products.json`](portfolio/products.json).
