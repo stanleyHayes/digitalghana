@@ -294,7 +294,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 - [x] GhanaGov: verified-subset public beta with source-linked institution hierarchy/service catalogue, independent web/API deployments, custom-control/browser QA, SEO evidence and rollback drills.
 - [x] GhanaValidate: package-first public beta with versioned primitives and explicit non-verification safety boundaries; npm/API/hooks remain stable gates.
 - [x] GhanaSchools: source/licence-approved verified-subset beta linked through pinned GhanaGeo IDs; broader school classes and GhanaCodes education namespaces remain stable gates.
-- [ ] Audit shipped product interfaces against `docs/standards/interface-design.md`; GhanaGov and the umbrella are aligned, while Calendar/Codes require recorded migration checks.
+- [x] Audit shipped product interfaces against `docs/standards/interface-design.md`; Calendar/Codes native controls and typography were migrated, and all portfolio-owned public sites now have recorded UI/SEO evidence.
 
 **Verification:** each product independently meets the global definition of done and failure of one does not make another unavailable.
 
@@ -358,7 +358,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-7.1 | GhanaDataset metadata-only beta | Done — stable gates remain | Codex | DG-6.3 | Web/API live; CI `33525713204`; Vercel `dpl_7DNotCeQfjj422UESt9TL5ecUVHi`; Render `dep-dabeveu10ojc73a4cjj0`; source rights, contracts, browser, SEO and rollback evidence recorded |
 | DG-7.2 | GhanaEssential safety-gated beta | Done — stable gates remain | Codex | DG-7.1 | Web/API live; CI `33526951922`; Vercel `dpl_EabK9Fwxrqzzx9n18ciu6xfkxEzh`; Render `dep-dabf4r610ojc73a4pcc0`; freshness, safety, offline, browser, SEO and rollback evidence recorded |
 | DG-9.1 | Neurodyne NOSI source review and future integration plan | Done — execution not approved | Codex | DG-0.1 | Two source DOCX files checksummed; boundary/gates/backlog recorded in `docs/portfolio/neurodyne-nosi-integration-plan.md`; visual DOCX render unavailable because LibreOffice is not installed |
-| DG-6.UI | Portfolio typography and custom-control standard | In progress | Codex | DG-3.1 | GeoGhana reference adopted; umbrella and GhanaGov aligned; Calendar/Codes audit and migration remain |
+| DG-6.UI | Portfolio typography, custom-control and SEO standard | Done | Codex | DG-3.1 | All shipped portfolio-owned sites audited; Calendar/Codes migrated; favicon, canonical, manifest, OG/Twitter and 1200x630 production evidence recorded in `docs/runbooks/evidence/portfolio-ui-seo-audit-2026-09-01.md` |
 
 ### Status rules
 
