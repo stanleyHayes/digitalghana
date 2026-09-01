@@ -35,8 +35,11 @@ The proposed decision and rationale are recorded in [`docs/adr/0001-federated-po
 - `Ghana_Digital_Public_Infrastructure_Project_Portfolio.docx`
 - `AI_Development_Workflow_Training_Manual.docx`
 - `AI_Native_Software_Engineering_Operations_Manual.docx`
+- `Neurodyne_NOSI_Preparation_Early_Mover_Strategy.docx` (future adjacent programme; not a live portfolio product)
+- `Neurodyne_NOSI_Technical_Execution_Roadmap.docx` (future adjacent programme; not a live portfolio product)
 
 Checksums and document roles are recorded in [`docs/portfolio/source-manifest.json`](docs/portfolio/source-manifest.json).
+The boundary and approval-gated preparation plan for NOSI is recorded in [`docs/portfolio/neurodyne-nosi-integration-plan.md`](docs/portfolio/neurodyne-nosi-integration-plan.md).
 
 ## Working in this repository
 

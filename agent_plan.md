@@ -319,6 +319,21 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 
 **Verification:** domain outage isolation, scoped keys, protocol parity, usage accounting, backward compatibility and rollback pass.
 
+### Phase 9 — Neurodyne NOSI evaluation (future, approval-gated)
+
+**Outcome:** evaluate NOSI as a separate open-standards and conformance programme without conflating it with Digital Ghana products, GhanaData, government authority or regulated production connectivity.
+
+- [x] Retain and checksum the two August 2026 NOSI strategy/roadmap documents.
+- [x] Record the architecture boundary, overlap decisions, staged gates and immediate backlog in `docs/portfolio/neurodyne-nosi-integration-plan.md`.
+- [ ] Reverify every time-sensitive BoG, NITA, eGIF and national-strategy source immediately before execution.
+- [ ] Decide programme governance, GitHub/package owner, branding and whether any Digital Ghana subdomain is appropriate.
+- [ ] Obtain legal/privacy/security review before creating identity, consent, account, transaction, payment or provider-connectivity artifacts.
+- [ ] Approve Gate N0 before creating `nosi-specs` or advertising NOSI publicly.
+
+**Boundary:** NOSI is not yet a live registry product. GhanaData remains the deferred public-data gateway; an optional NOSI gateway would be separately governed and must never become the only way to use the open specifications.
+
+**Verification:** source status and rights decisions are current; owner has approved governance and positioning; no implied government/regulator endorsement; no DNS/repository/product claim exists before approval.
+
 ---
 
 ## 9. Live task board
@@ -336,6 +351,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-3.1 | Umbrella website | Done | Codex | DG-1.1 | Registry-driven site live at `digitalghana.dev`; deployment `dpl_EJeL8KMjuaY4wRMazDagu5PDRaHW`; HTTP 200 and TLS verified |
 | DG-4.1 | Product repository starter | Done | Codex | DG-1.1, DG-2.1 | `scripts/test_generate_product.rb` proves clean generation, required controls, token replacement, no Geo-specific leakage and no embedded secret signatures |
 | DG-5.1 | GhanaCalendar beta | Done — stable gates remain | Codex | DG-4.1 | Public repo and product ledger; web/API live; source, fixture, CI, TLS and smoke evidence recorded |
+| DG-9.1 | Neurodyne NOSI source review and future integration plan | Done — execution not approved | Codex | DG-0.1 | Two source DOCX files checksummed; boundary/gates/backlog recorded in `docs/portfolio/neurodyne-nosi-integration-plan.md`; visual DOCX render unavailable because LibreOffice is not installed |
 
 ### Status rules
 

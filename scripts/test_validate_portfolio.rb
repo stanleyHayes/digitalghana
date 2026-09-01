@@ -20,6 +20,8 @@ REQUIRED_PATHS = %w[
   Ghana_Digital_Public_Infrastructure_Project_Portfolio.docx
   AI_Development_Workflow_Training_Manual.docx
   AI_Native_Software_Engineering_Operations_Manual.docx
+  Neurodyne_NOSI_Preparation_Early_Mover_Strategy.docx
+  Neurodyne_NOSI_Technical_Execution_Roadmap.docx
   docs/adr/0001-federated-portfolio-architecture.md
   docs/governance/data-source-policy.md
   docs/governance/licensing-policy.md
@@ -28,6 +30,7 @@ REQUIRED_PATHS = %w[
   docs/runbooks/evidence/dns-inventory-2026-09-01.md
   docs/runbooks/evidence/provider-inventory-2026-09-01.md
   docs/portfolio/source-manifest.json
+  docs/portfolio/neurodyne-nosi-integration-plan.md
   portfolio/products.json
   portfolio/products.schema.json
   portfolio/source-manifest.schema.json

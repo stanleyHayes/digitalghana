@@ -16,6 +16,16 @@
       "path": "AI_Native_Software_Engineering_Operations_Manual.docx",
       "role": "engineering-operations-source",
       "sha256": "6e9d3722f8316a66251eb70a135111b5626edbeb29a534362302cef682b35468"
+    },
+    {
+      "path": "Neurodyne_NOSI_Preparation_Early_Mover_Strategy.docx",
+      "role": "future-nosi-strategy-source",
+      "sha256": "b5fce7e3f929113a2dbe5ea232dcd6f3ec72b62d7185a0ce9e312c84f0853fe8"
+    },
+    {
+      "path": "Neurodyne_NOSI_Technical_Execution_Roadmap.docx",
+      "role": "future-nosi-roadmap-source",
+      "sha256": "24ba7dd9a3de8eb9b6efcbe3d6521e59b2904696a56b36fc7fa0ec1cc4e812e3"
     }
   ]
 }
