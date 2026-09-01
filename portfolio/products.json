@@ -92,11 +92,11 @@
       "id": "validate",
       "name": "GhanaValidate",
       "repository": "ghanavalidate",
-      "lifecycle": "proposed",
+      "lifecycle": "beta",
       "order": 4,
-      "notes": "Package first; hosted API only after demonstrated demand.",
+      "notes": "Package-first public beta for deterministic phone, GhanaPostGPS syntax, text and versioned reference normalization. It explicitly never equates syntax validation with identity, ownership or authenticity verification.",
       "surfaces": [
-        { "kind": "web", "hostname": "validate.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+        { "kind": "web", "hostname": "validate.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/ghanavalidate-beta-2026-09-01.md" }
       ]
     },
     {
