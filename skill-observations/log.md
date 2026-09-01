@@ -52,3 +52,18 @@ Observations captured during task-oriented work.
 **Suggested improvement:** Make rollback drills three-step evidence: promote a known-good prior artifact, smoke the canonical hostname, then restore the intended artifact and smoke again. Record provider-generated deployment IDs for both transitions.
 
 **Principle:** A release rollback drill is complete only after the intended release has been restored and reverified on the canonical surface.
+
+### Observation 4: Separate source verification from operational availability
+
+**Status:** OPEN
+**Date:** 2026-09-01
+**Session context:** Releasing a safety-sensitive public contact directory from official institutional sources.
+**Skill:** do
+**Type:** open-source
+**Phase/Area:** Safety and acceptance language
+
+**Issue:** A current official source can prove that an organization published a contact, but it cannot prove that a telephone line will connect, be answered, or meet a response time. A generic verified badge can accidentally overclaim the stronger guarantee.
+
+**Suggested improvement:** For safety-sensitive directories, define verification predicates by field and render the predicate in user-facing language such as source checked. Pair it with a freshness window, fail-closed downgrade rule, and explicit availability disclaimer.
+
+**Principle:** Verification labels must name the fact actually proven and must not imply live operational availability without corresponding evidence.
