@@ -82,7 +82,8 @@ end
 assert_case("unsupported live claim", expected_success: false, expected_text: "live hostname lacks provider") do |root|
   path = root.join("portfolio/products.json")
   update_json(path) do |catalogue|
-    catalogue["products"][0]["surfaces"][0]["state"] = "live"
+    surface = catalogue["products"].flat_map { |product| product["surfaces"] }.find { |candidate| candidate["state"] == "planned" }
+    surface["state"] = "live"
   end
 end
 

@@ -333,7 +333,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-2.1 | GeoGhana plan reconciliation | Done | Codex | DG-0.3 | Merged through `stanleyHayes/geoghana#1`; merge `324916e` |
 | DG-2.2 | GeoGhana domain migration/attachment | Done | Codex | DG-0.4, DG-2.1 | Four canonical frontend hosts attached to Vercel with valid TLS and HTTP 200 |
 | DG-2.3 | GeoGhana production launch verification | In progress — API blocked | Codex | DG-2.2 | Frontend boundary verified; API/worker fail closed on 14 missing provider values |
-| DG-3.1 | Umbrella website | In progress | Codex | DG-1.1 | Building a registry-driven public catalogue for `digitalghana.dev` |
+| DG-3.1 | Umbrella website | Done | Codex | DG-1.1 | Registry-driven site live at `digitalghana.dev`; deployment `dpl_EJeL8KMjuaY4wRMazDagu5PDRaHW`; HTTP 200 and TLS verified |
 | DG-4.1 | Product repository starter | Pending | Unassigned | DG-1.1, DG-2.1 | Distill only proven reusable conventions |
 | DG-5.1 | GhanaCalendar build plan | Pending | Unassigned | DG-4.1 | Separate product-level plan and approval gate required |
 

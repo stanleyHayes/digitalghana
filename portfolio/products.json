@@ -30,11 +30,11 @@
       "id": "portfolio",
       "name": "Digital Ghana",
       "repository": "digitalghana",
-      "lifecycle": "planning",
+      "lifecycle": "stable",
       "order": 0,
-      "notes": "Portfolio control plane and future umbrella website.",
+      "notes": "Portfolio control plane and live public catalogue.",
       "surfaces": [
-        { "kind": "umbrella", "hostname": "digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+        { "kind": "umbrella", "hostname": "digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/umbrella-launch-2026-09-01.md" }
       ]
     },
     {
