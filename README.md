@@ -49,6 +49,6 @@ ruby scripts/test_validate_portfolio.rb
 
 The validator checks the product registry, hostname uniqueness, lifecycle rules, source-document checksums and required governance files without requiring third-party packages.
 
-## Licence status
+## Licence
 
-The portfolio is intended to be open source, but the repository licence and data licences have not yet been selected. Until an owner records those decisions, no source document or dataset should be described as licensed for redistribution. See [`docs/governance/licensing-policy.md`](docs/governance/licensing-policy.md).
+Original code and configuration are available under Apache License 2.0. Source documents and datasets retain their own rights and are not relicensed merely by being referenced or retained here. See [`docs/governance/licensing-policy.md`](docs/governance/licensing-policy.md).

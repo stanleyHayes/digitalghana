@@ -28,4 +28,4 @@ Corrections need evidence. Provide the affected stable identifier, current value
 
 ## Licensing
 
-Contribution licensing is pending the repository licence decision. Contributions should not be accepted for release until the owner selects and publishes a licence and contribution terms.
+Unless explicitly stated otherwise, contributions intentionally submitted for inclusion are provided under Apache License 2.0 under the licence's inbound=outbound terms. Contributions must not include third-party data or documents without recorded permission.

@@ -1,21 +1,19 @@
-# Licensing policy and pending decisions
+# Licensing policy
 
-## Current status
+## Code and original configuration
 
-The project is intended to be open source, but no repository licence, contribution licence or portfolio-wide data licence has been approved. Therefore:
+Original code and configuration in this repository are licensed under Apache License 2.0. Contributions intentionally submitted for inclusion use the same inbound and outbound terms under section 5 of that licence unless explicitly agreed otherwise.
 
-- do not add an arbitrary `LICENSE` file;
-- do not describe repository contents as OSI-licensed yet;
-- do not redistribute source documents or datasets beyond permissions already held;
-- do not accept release-bound external contributions until contribution terms are clear.
+## Documents and data
+
+The Apache-2.0 repository licence does not override third-party rights in the retained source DOCX files or imported datasets. Do not redistribute source documents or datasets beyond permissions already held. Each product maintains a source/licence register and labels unknown rights as unknown.
 
 ## Decisions the owner must record
 
-1. Source-code licence for portfolio and product repositories.
-2. Documentation licence.
-3. Default data licence, recognizing that source-specific terms override the default.
-4. Contributor terms: developer certificate of origin, contributor licence agreement or standard inbound=outbound terms.
-5. Trademark/name/logo policy and rules for claims of endorsement.
+1. Documentation licence for original public documentation.
+2. Default data licence, recognizing that source-specific terms override the default.
+3. Whether a Developer Certificate of Origin is required in addition to Apache-2.0 inbound terms.
+4. Trademark/name/logo policy and rules for claims of endorsement.
 
 ## Recommended evaluation criteria
 

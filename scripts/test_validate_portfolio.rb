@@ -15,6 +15,7 @@ REQUIRED_PATHS = %w[
   CONTRIBUTING.md
   SECURITY.md
   CODE_OF_CONDUCT.md
+  LICENSE
   agent_plan.md
   Ghana_Digital_Public_Infrastructure_Project_Portfolio.docx
   AI_Development_Workflow_Training_Manual.docx

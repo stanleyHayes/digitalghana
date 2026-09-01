@@ -28,6 +28,7 @@ required_files = %w[
   CONTRIBUTING.md
   SECURITY.md
   CODE_OF_CONDUCT.md
+  LICENSE
   agent_plan.md
   docs/adr/0001-federated-portfolio-architecture.md
   docs/governance/data-source-policy.md
