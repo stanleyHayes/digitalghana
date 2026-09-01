@@ -267,10 +267,10 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 
 **Outcome:** new products begin consistently without copying GeoGhana wholesale.
 
-- [ ] Distill proven repository conventions from GeoGhana into a small template.
-- [ ] Include CI, contract testing, provenance/licence register, security baseline, deployment skeleton, observability, ADRs, agent ledger and release evidence structure.
-- [ ] Keep domain schema/business logic out of the template.
-- [ ] Test by generating a temporary repository and running its checks.
+- [x] Distill proven repository conventions from GeoGhana into a small template.
+- [x] Include CI, contract admission/testing guidance, provenance/licence register, security baseline, deployment skeleton, observability/operations gate, ADRs, agent ledger and release evidence structure.
+- [x] Keep domain schema/business logic out of the template.
+- [x] Test by generating a temporary repository and running its checks.
 
 **Verification:** generated repository builds/tests from a clean checkout and contains no GeoGhana-specific names, secrets, ports or data.
 
@@ -334,7 +334,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-2.2 | GeoGhana domain migration/attachment | Done | Codex | DG-0.4, DG-2.1 | Four canonical frontend hosts attached to Vercel with valid TLS and HTTP 200 |
 | DG-2.3 | GeoGhana production launch verification | In progress — API blocked | Codex | DG-2.2 | Frontend boundary verified; API/worker fail closed on 14 missing provider values |
 | DG-3.1 | Umbrella website | Done | Codex | DG-1.1 | Registry-driven site live at `digitalghana.dev`; deployment `dpl_EJeL8KMjuaY4wRMazDagu5PDRaHW`; HTTP 200 and TLS verified |
-| DG-4.1 | Product repository starter | Pending | Unassigned | DG-1.1, DG-2.1 | Distill only proven reusable conventions |
+| DG-4.1 | Product repository starter | Done | Codex | DG-1.1, DG-2.1 | `scripts/test_generate_product.rb` proves clean generation, required controls, token replacement, no Geo-specific leakage and no embedded secret signatures |
 | DG-5.1 | GhanaCalendar build plan | Pending | Unassigned | DG-4.1 | Separate product-level plan and approval gate required |
 
 ### Status rules
