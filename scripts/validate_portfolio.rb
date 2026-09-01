@@ -137,10 +137,15 @@ manifest.fetch("documents", []).each do |document|
   end
 end
 
-nested_git = Dir.glob(ROOT.join("**/.git").to_s, File::FNM_DOTMATCH).reject { |path| Pathname.new(path).cleanpath == ROOT.join(".git").cleanpath }
+generated_directories = ["/.git/", "/node_modules/", "/.next/", "/dist/", "/coverage/"]
+generated_path = ->(path) { generated_directories.any? { |directory| path.include?(directory) } }
+
+nested_git = Dir.glob(ROOT.join("**/.git").to_s, File::FNM_DOTMATCH).reject { |path| Pathname.new(path).cleanpath == ROOT.join(".git").cleanpath || generated_path.call(path) }
 error("nested Git repositories found: #{nested_git.join(', ')}") unless nested_git.empty?
 
 Dir.glob(ROOT.join("**/*.md").to_s).each do |markdown_path|
+  next if generated_path.call(markdown_path)
+
   contents = File.read(markdown_path)
   contents.scan(/\[[^\]]+\]\(([^)]+)\)/).flatten.each do |raw_target|
     target = raw_target.sub(/\A</, "").sub(/>\z/, "").split("#", 2).first
@@ -160,7 +165,7 @@ secret_patterns = {
 text_extensions = %w[.md .json .rb .yml .yaml .txt .example]
 Dir.glob(ROOT.join("**/*").to_s, File::FNM_DOTMATCH).each do |candidate|
   next unless File.file?(candidate)
-  next if candidate.include?("/.git/")
+  next if generated_path.call(candidate)
   next unless text_extensions.include?(File.extname(candidate)) || File.basename(candidate).start_with?(".env.example")
 
   contents = File.read(candidate)
