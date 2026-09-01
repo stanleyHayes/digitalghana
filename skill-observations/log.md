@@ -37,3 +37,18 @@ Observations captured during task-oriented work.
 **Suggested improvement:** When executing portfolio architecture, add a machine-readable ownership inventory plus negative tests for duplicate names, unsupported readiness claims, integrity drift and premature shared-platform activation.
 
 **Principle:** Important architecture invariants should be executable and tested, not left solely as narrative conventions.
+
+### Observation 3: Prove rollback by restoring the intended release
+
+**Status:** OPEN
+**Date:** 2026-09-01
+**Session context:** Releasing independent web and API products across two deployment providers.
+**Skill:** do
+**Type:** open-source
+**Phase/Area:** Production verification
+
+**Issue:** A rollback command succeeding proves only that an older artifact can be promoted. It does not prove the canonical service is left on the intended release or that both directions remain healthy.
+
+**Suggested improvement:** Make rollback drills three-step evidence: promote a known-good prior artifact, smoke the canonical hostname, then restore the intended artifact and smoke again. Record provider-generated deployment IDs for both transitions.
+
+**Principle:** A release rollback drill is complete only after the intended release has been restored and reverified on the canonical surface.
