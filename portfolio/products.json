@@ -1,0 +1,138 @@
+{
+  "$schema": "./products.schema.json",
+  "version": 1,
+  "domain": "digitalghana.dev",
+  "dns": {
+    "authoritativeProvider": "Vercel DNS",
+    "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
+    "verifiedAt": "2026-09-01",
+    "evidence": "docs/runbooks/evidence/dns-inventory-2026-09-01.md",
+    "wildcardResolution": true
+  },
+  "products": [
+    {
+      "id": "portfolio",
+      "name": "Digital Ghana",
+      "repository": "digitalghana",
+      "lifecycle": "planning",
+      "order": 0,
+      "notes": "Portfolio control plane and future umbrella website.",
+      "surfaces": [
+        { "kind": "umbrella", "hostname": "digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "geo",
+      "name": "GhanaGeo",
+      "repository": "geoghana",
+      "lifecycle": "externally_blocked",
+      "order": 0,
+      "notes": "Implementation is mature; production provider and launch gates require reconciliation.",
+      "surfaces": [
+        { "kind": "web", "hostname": "geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "sandbox", "hostname": "sandbox-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "console", "hostname": "console-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "admin", "hostname": "admin-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "sandbox", "hostname": "sandbox.geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": false, "provider": null, "evidence": null },
+        { "kind": "console", "hostname": "console.geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": false, "provider": null, "evidence": null },
+        { "kind": "admin", "hostname": "admin.geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": false, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "calendar",
+      "name": "GhanaCalendar",
+      "repository": "ghanacalendar",
+      "lifecycle": "proposed",
+      "order": 1,
+      "notes": "First new product after portfolio and GeoGhana launch foundations.",
+      "surfaces": [
+        { "kind": "web", "hostname": "calendar.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-calendar.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "codes",
+      "name": "GhanaCodes",
+      "repository": "ghanacodes",
+      "lifecycle": "proposed",
+      "order": 2,
+      "notes": "Interoperability and code crosswalk backbone.",
+      "surfaces": [
+        { "kind": "web", "hostname": "codes.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-codes.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "gov",
+      "name": "GhanaGov Registry",
+      "repository": "ghanagov",
+      "lifecycle": "proposed",
+      "order": 3,
+      "notes": "Institution and government-service registry.",
+      "surfaces": [
+        { "kind": "web", "hostname": "gov.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-gov.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "validate",
+      "name": "GhanaValidate",
+      "repository": "ghanavalidate",
+      "lifecycle": "proposed",
+      "order": 4,
+      "notes": "Package first; hosted API only after demonstrated demand.",
+      "surfaces": [
+        { "kind": "web", "hostname": "validate.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "schools",
+      "name": "GhanaSchools",
+      "repository": "ghanaschools",
+      "lifecycle": "proposed",
+      "order": 5,
+      "notes": "Education registry after source and licence review.",
+      "surfaces": [
+        { "kind": "web", "hostname": "schools.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-schools.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "datasets",
+      "name": "GhanaDataset Registry",
+      "repository": "ghanadatasets",
+      "lifecycle": "proposed",
+      "order": 6,
+      "notes": "Metadata catalogue; restricted datasets are linked rather than copied.",
+      "surfaces": [
+        { "kind": "web", "hostname": "datasets.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-datasets.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "essential",
+      "name": "GhanaEssential",
+      "repository": "ghanaessential",
+      "lifecycle": "proposed",
+      "order": 7,
+      "notes": "Safety-sensitive product gated by mature verification operations.",
+      "surfaces": [
+        { "kind": "web", "hostname": "essential.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "api", "hostname": "api-essential.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "GhanaData",
+      "repository": "ghanadata",
+      "lifecycle": "proposed",
+      "order": 8,
+      "notes": "Deferred until at least three products are stable and shared demand is measured.",
+      "surfaces": [
+        { "kind": "console", "hostname": "developers.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "gateway", "hostname": "api.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../portfolio/source-manifest.schema.json",
+  "version": 1,
+  "documents": [
+    {
+      "path": "Ghana_Digital_Public_Infrastructure_Project_Portfolio.docx",
+      "role": "portfolio-product-source",
+      "sha256": "d44ba41184f3138dd1e9857311d17aa4f34e47d85b7817f31209c91925e19284"
+    },
+    {
+      "path": "AI_Development_Workflow_Training_Manual.docx",
+      "role": "delivery-workflow-source",
+      "sha256": "2c79c6d79379535ac2f735d22f186c857dea0ac2674f122b8d3ff462b4015eb6"
+    },
+    {
+      "path": "AI_Native_Software_Engineering_Operations_Manual.docx",
+      "role": "engineering-operations-source",
+      "sha256": "6e9d3722f8316a66251eb70a135111b5626edbeb29a534362302cef682b35468"
+    }
+  ]
+}
