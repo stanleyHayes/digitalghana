@@ -278,11 +278,11 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 
 **Outcome:** first new product validates the portfolio model.
 
-- [ ] Create independent `ghanacalendar` repository from the approved starter.
-- [ ] Complete source/licence review and rules specification before ingestion.
-- [ ] Implement fixed/calculated holidays, announced overrides, Africa/Accra working-day engine and 2024–2026 evidence-backed seed.
-- [ ] Implement REST/GraphQL, SDK/hooks, admin review/publish flow, docs and sandbox.
-- [ ] Deploy beta at `calendar.digitalghana.dev` and `api-calendar.digitalghana.dev`.
+- [x] Create independent `ghanacalendar` repository from the approved starter.
+- [x] Complete source/licence review and rules specification before ingestion.
+- [x] Implement fixed/calculated holidays, announced overrides, Africa/Accra working-day engine and 2024–2026 evidence-backed seed.
+- [ ] Implement REST/GraphQL, SDK/hooks, admin review/publish flow, docs and sandbox. REST, constrained GraphQL, source TypeScript client, docs and sandbox are done; hooks, admin workflow and package publication remain stable gates.
+- [x] Deploy beta at `calendar.digitalghana.dev` and `api-calendar.digitalghana.dev`.
 
 **Verification:** official fixtures, substitution/history determinism, cross-protocol parity, source evidence, security/load checks, release rollback and production smoke pass.
 
@@ -335,7 +335,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-2.3 | GeoGhana production launch verification | In progress — API blocked | Codex | DG-2.2 | Frontend boundary verified; API/worker fail closed on 14 missing provider values |
 | DG-3.1 | Umbrella website | Done | Codex | DG-1.1 | Registry-driven site live at `digitalghana.dev`; deployment `dpl_EJeL8KMjuaY4wRMazDagu5PDRaHW`; HTTP 200 and TLS verified |
 | DG-4.1 | Product repository starter | Done | Codex | DG-1.1, DG-2.1 | `scripts/test_generate_product.rb` proves clean generation, required controls, token replacement, no Geo-specific leakage and no embedded secret signatures |
-| DG-5.1 | GhanaCalendar build plan | Pending | Unassigned | DG-4.1 | Separate product-level plan and approval gate required |
+| DG-5.1 | GhanaCalendar beta | Done — stable gates remain | Codex | DG-4.1 | Public repo and product ledger; web/API live; source, fixture, CI, TLS and smoke evidence recorded |
 
 ### Status rules
 
