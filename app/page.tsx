@@ -51,6 +51,8 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#portfolio">Projects</a>
+          <a href="/status">Status</a>
+          <a href="/roadmap">Roadmap</a>
           <a href="https://github.com/stanleyHayes/digitalghana">GitHub</a>
         </nav>
       </header>
@@ -128,6 +130,9 @@ export default function Home() {
         <div className="footer-mark"><span className="mark" aria-hidden="true"><i /><i /><i /></span><strong>Digital Ghana</strong></div>
         <p>Public-interest software for Ghana.<br />Built openly, one dependable block at a time.</p>
         <div className="footer-links">
+          <a href="/governance">Governance and source policy</a>
+          <a href="/contribute">Contribute</a>
+          <a href="/status">System status</a>
           <a href="https://github.com/stanleyHayes/digitalghana">Source and roadmap ↗</a>
           <a href="mailto:hello@digitalghana.dev">hello@digitalghana.dev</a>
         </div>

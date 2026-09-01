@@ -256,10 +256,10 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 
 **Outcome:** `digitalghana.dev` explains the initiative and routes users to independently deployed products.
 
-- [ ] Build product catalogue, mission, roadmap, governance, contribution, source/licence policy, status and sponsor/donation information.
-- [ ] Display honest lifecycle badges: proposed, building, beta, stable, externally blocked.
-- [ ] Link each product's docs, source, API, status and data licence.
-- [ ] Avoid presenting planned products as already operational.
+- [x] Build product catalogue, mission, roadmap, governance, contribution, source/licence policy, status and sponsor/donation information.
+- [x] Display honest lifecycle badges: proposed, building, beta, stable, externally blocked.
+- [x] Link each live product surface and portfolio policy source without creating false availability links.
+- [x] Avoid presenting planned products as already operational.
 
 **Verification:** accessibility, responsive UI, metadata, sitemap, link checks and product-state accuracy pass.
 
