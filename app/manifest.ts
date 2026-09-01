@@ -1,0 +1,1 @@
+import type{MetadataRoute}from"next";export default function manifest():MetadataRoute.Manifest{return{name:"Digital Ghana",short_name:"Digital Ghana",description:"Open public infrastructure for Ghana",start_url:"/",display:"standalone",background_color:"#f4f3ea",theme_color:"#123f2f",icons:[{src:"/icon.svg",sizes:"any",type:"image/svg+xml"}]}}
