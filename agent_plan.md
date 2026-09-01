@@ -330,9 +330,9 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 | DG-0.3 | Portfolio architecture recommendation | Done | Owner | DG-0.1, DG-0.2 | ADR-0001 accepted on 2026-09-01; full implementation authorized |
 | DG-0.4 | Provider/DNS/GitHub inventory | In progress | Codex / Owner | DG-0.3 | Public and authenticated evidence recorded; GitHub owner/package scope and Vercel project attachment remain |
 | DG-1.1 | ADR-0001 and repository foundation | Done | Codex | DG-0.3 | Public repo `stanleyHayes/digitalghana`; commits `9ff1bb0`, `0ee2777`, `3f40605`; clean-clone validation passes |
-| DG-2.1 | GeoGhana plan reconciliation | Ready after approval | Unassigned | DG-0.3 | Must be edited in `../geoghana`, following its lane rules |
-| DG-2.2 | GeoGhana domain migration/attachment | Blocked | Unassigned | DG-0.4, DG-2.1 | Needs DNS/provider inventory and approved hostname convention |
-| DG-2.3 | GeoGhana production launch verification | Blocked | Unassigned | DG-2.2 | External secrets, alerting, backup tier and registry ownership may remain |
+| DG-2.1 | GeoGhana plan reconciliation | Done | Codex | DG-0.3 | Merged through `stanleyHayes/geoghana#1`; merge `324916e` |
+| DG-2.2 | GeoGhana domain migration/attachment | Done | Codex | DG-0.4, DG-2.1 | Four canonical frontend hosts attached to Vercel with valid TLS and HTTP 200 |
+| DG-2.3 | GeoGhana production launch verification | In progress — API blocked | Codex | DG-2.2 | Frontend boundary verified; API/worker fail closed on 14 missing provider values |
 | DG-3.1 | Umbrella website | Pending | Unassigned | DG-1.1 | Must represent lifecycle states honestly |
 | DG-4.1 | Product repository starter | Pending | Unassigned | DG-1.1, DG-2.1 | Distill only proven reusable conventions |
 | DG-5.1 | GhanaCalendar build plan | Pending | Unassigned | DG-4.1 | Separate product-level plan and approval gate required |

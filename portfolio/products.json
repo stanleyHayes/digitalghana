@@ -43,16 +43,13 @@
       "repository": "geoghana",
       "lifecycle": "externally_blocked",
       "order": 0,
-      "notes": "Implementation is mature; production provider and launch gates require reconciliation.",
+      "notes": "Four frontend surfaces are live on Vercel; the API and worker remain externally blocked on production provider values.",
       "surfaces": [
-        { "kind": "web", "hostname": "geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
+        { "kind": "web", "hostname": "geo.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/geoghana-frontend-launch-2026-09-01.md" },
         { "kind": "api", "hostname": "api-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
-        { "kind": "sandbox", "hostname": "sandbox-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
-        { "kind": "console", "hostname": "console-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
-        { "kind": "admin", "hostname": "admin-geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": true, "provider": null, "evidence": null },
-        { "kind": "sandbox", "hostname": "sandbox.geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": false, "provider": null, "evidence": null },
-        { "kind": "console", "hostname": "console.geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": false, "provider": null, "evidence": null },
-        { "kind": "admin", "hostname": "admin.geo.digitalghana.dev", "environment": "production", "state": "planned", "canonical": false, "provider": null, "evidence": null }
+        { "kind": "sandbox", "hostname": "sandbox-geo.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/geoghana-frontend-launch-2026-09-01.md" },
+        { "kind": "console", "hostname": "console-geo.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/geoghana-frontend-launch-2026-09-01.md" },
+        { "kind": "admin", "hostname": "admin-geo.digitalghana.dev", "environment": "production", "state": "live", "canonical": true, "provider": "Vercel", "evidence": "docs/runbooks/evidence/geoghana-frontend-launch-2026-09-01.md" }
       ]
     },
     {
