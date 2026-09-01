@@ -290,7 +290,7 @@ The existing GeoGhana plan is detailed and remains authoritative inside that rep
 
 **Outcome:** build GhanaCodes, then GhanaGov, GhanaValidate and GhanaSchools using stable Geo/Calendar conventions.
 
-- [ ] GhanaCodes: Geo/MMDA crosswalk and ambiguity-safe resolution.
+- [x] GhanaCodes: GSS 2021 region/MMDA namespace and ambiguity-safe resolution public beta; broader historical/external namespaces remain stable gates.
 - [ ] GhanaGov: institution hierarchy/service catalogue with official-source verification.
 - [ ] GhanaValidate: package-first primitives, never false claims of authoritative identity verification.
 - [ ] GhanaSchools: source/licence-approved registry linked through GhanaGeo IDs and GhanaCodes namespaces.
